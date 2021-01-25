@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "del-cli dist -f",
-    "build": "webpack --entry ./src/main.js --output-path ./dist",
-    "execute": "node dist/main.js",
+    "build": "webpack",
+    "execute": "node dist/bundle.js",
     "start": "npm run build -s && npm run execute -s"
   },
   "repository": {
