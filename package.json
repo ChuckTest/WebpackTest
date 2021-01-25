@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --entry ./src/main.js --output-path ./dist"
+    "prebuild": "del-cli dist -f",
+    "build": "webpack --entry ./src/main.js --output-path ./dist",
+    "execute": "node dist/main.js",
+    "start": "npm run build -s && npm run execute -s"
   },
   "repository": {
     "type": "git",
