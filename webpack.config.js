@@ -11,7 +11,7 @@ module.exports = {
             exclude: /node_modules/,
             options: {
                 plugins: ['transform-runtime'],
-                presets: ['@babel/preset-env']
+                presets: ['es2015']
             }
         }]
     }
