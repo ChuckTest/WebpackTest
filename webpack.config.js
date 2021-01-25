@@ -4,7 +4,15 @@ module.exports = {
         path: __dirname + '/dist',
         filename: 'bundle.js'
     },
-    module:{
-        rules:[]
+    module: {
+        rules: [{
+            test: /\.jsx?$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/,
+            options: {
+                plugins: ['transform-runtime'],
+                presets: ['@babel/preset-env']
+            }
+        }]
     }
 };
