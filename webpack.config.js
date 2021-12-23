@@ -10,7 +10,8 @@ module.exports = {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
                 options: {
-                    fakeoption: true
+                    plugins: ['transform-runtime'],
+                    presets: ['es2015']
                 }
             }
         ]
