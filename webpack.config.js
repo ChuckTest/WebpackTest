@@ -24,6 +24,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlwebpackPlugin()
+        new HtmlwebpackPlugin({
+            title: 'Intro to webpack',
+            template: 'src/index.html'
+        })
     ]
 };
