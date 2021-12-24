@@ -1,3 +1,5 @@
+var HtmlwebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     entry: './src/main.js',
     output: {
@@ -20,5 +22,8 @@ module.exports = {
                 loader: 'handlebars-loader'
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlwebpackPlugin()
+    ]
 };
